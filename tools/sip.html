@@ -322,8 +322,23 @@
               <li class="nav-item no-underline">
                 <a class="main-btn navbar-btn" style="padding: 2px 20px; color: rgb(237, 242, 244);animation-duration: 0.4s;animation-name: ease;" data-scroll-nav="0" href="#" onclick="openModal()">Login/Register 💻</a>
               </li>
+              <li>
+                <span id="icon">🌙</span>
+             </li> 
             </ul>
           </div>
+
+          <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function (){
+             document.body.classList.toggle("dark-theme");
+             if(document.body.classList.contains("dark-theme")){
+               icon.innerHTML = "☀️";
+             } else {
+               icon.innerHTML = "🌙";
+             }
+            }
+          </script>
               <div class="">
 
                 <!-- Login Modal -->
@@ -610,7 +625,7 @@ registerCloseButton.addEventListener("click", function() {
         </div>
       </div>
     </div>
-    <div class="page-container shadow p-5 mb-5 bg-white rounded mt-5">
+    <div class="page-container shadow p-5 mb-5 rounded mt-5">
       <div class="switch-container radio-button">
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" value="SIP" checked name="checked">

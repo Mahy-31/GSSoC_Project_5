@@ -1,5 +1,10 @@
 :root{
-    --slider-dark:rgba(255,255,255,0.5);
+    --primary-color: white;
+    --secondary-color: black;
+}
+.dark-theme {
+    --primary-color: black;
+    --secondary-color: white;
 }
 
 .main{
@@ -20,6 +25,7 @@
     font-size: 25px;
     font-weight: 500;
     width: 100%;
+    background-color: var(--primary-color);
 }
 
 .card h2{
@@ -29,12 +35,12 @@
 }
 
 .service{
-    background: white;
+    background: var(--primary-color);
     padding: 30px;
     border-radius: 10px;
     position: relative;
     /* bottom: 0; */
-    box-shadow: 0 0 20px -15px black;
+    box-shadow: 0 0 20px -15px var(--secondary-color);
     z-index: 2;
     transition: transform .9s;
 }
@@ -130,7 +136,8 @@
     /* border: 2px solid salmon; */
     text-align: justify;
     padding: 10px 15px;
-    background: white;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 10px;
     /* clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 64%); */
     clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%);

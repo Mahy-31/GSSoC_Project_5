@@ -28,6 +28,17 @@ z
     -ms-transition: background-color 0.3s ease-in-out;
     -o-transition: background-color 0.3s ease-in-out;
 }
+#icon {
+    background-color: rgb(1, 14, 31);
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
 
 /* .navbar-collapse {
     display: flex;
@@ -65,7 +76,6 @@ z
 
 .navbar-nav .nav-item {
     display: inline-block;
-    margin: 0 15px;
     padding: 0;
 }
 
